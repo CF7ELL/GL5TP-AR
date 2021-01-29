@@ -53,7 +53,9 @@ There are no static errors occurred during the testing.<br/><br/>
 
 * **Dynamic Error :**
 Latency: When we put many agents in the scene, the rendering of the image becomes resource intensive. This has a bad effect on the co-existance between the virtual world and the real world.<br/>
-[![alt Latency GIF/Youtube link](TP2-AR/Misc/Screenshots/Observations/Dynamic_Error_-_Latency_Error.gif](https://youtu.be/EM6rPMZ5Jc4)<br/><br/>
+*Gif Showing the latency ([Youtube Link](https://youtu.be/EM6rPMZ5Jc4))*<center>
+![alt Latency GIF/Youtube link](TP2-AR/Misc/Screenshots/Observations/Dynamic_Error_-_Latency_Error.gif)</center>
+<br/><br/>
 
 #### 3) What are the technical solutions developed by ARCore to solve these problems?
 * **Lighting &rarr; Solution: Light Estimation**
