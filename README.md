@@ -59,5 +59,7 @@ Latency: When we put many agents in the scene, the rendering of the image become
 ARCore introduces the concept of light estimation to solve the lighting problem in AR. It does this by analyzing the video feed it gets and uses its frames to extract any visual cue. Then, it uses this data to simulate the same lighting conditions in the virtual scene. This makes the virtual objects feel more integrated within the real world and thus it enhances the immersion of the users.<br/><br/>
 * **Collisions &rarr; Solution: Depth Understanding**
 To solve the problem of collisions between the real objects and the virtual ones, ARCore uses Depth API. This technique uses a supported device's camera feed to generate a depth map. The depth map determines how far each pixel is from the camera. As such, by using a depth map, ARCore is able to make real world objects obscure virtual objects accurately if they come between them and the camera.<br/><br/>
-* **Static Error** &rarr; Solution: <br/><br/>
-* **Dynamic Error** &rarr; Solution: To solve the problem of latency ARCore uses prediction to predict the next point of the 
+
+* **Dynamic Error &rarr; Solution: Anchors** To solve the problem of latency ARCore uses Anchors, having fewer anchors will drastically improve performance and Motion-To-Photon latency. 
+
+    When it comes to applications with other User Interface components, ARCore uses **AR Sessions** to improve performance. An AR Session starts when the device starts tacking everything around by using Camera and device data. Keeping AR experiences on a seperate scene (AR Session) will avoid using up resources and battery life when tracking is not needed.
